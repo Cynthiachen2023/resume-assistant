@@ -1,0 +1,43 @@
+# === Python cache files ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# === Virtual environments ===
+venv/
+env/
+myenv/
+*.env/
+.venv/
+
+# === Environment variables & secrets ===
+.env
+.env.*  # any variant like .env.local or .env.prod
+
+# === Streamlit, LangChain & FAISS data ===
+logs/
+faiss_index/
+*.faiss
+*.npy
+*.pkl
+*.db
+data/
+uploads/
+tmp/
+temp/
+*.cache
+.cache/
+
+# === OS / IDE files ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# === Jupyter / Colab ===
+.ipynb_checkpoints/
+
+# === Streamlit share cache ===
+.streamlit/
