@@ -7,19 +7,27 @@ Upload your resume or project summaries, chat with the assistant, and even paste
 ### Setup
 1. Clone the repository
 git clone https://github.com/Cynthiachen2023/resume-assistant.git
-cd ai-job-assistant
+
+    ```bash
+    cd resume-assistant
+    ```
 
 2. Create a virtual environment
-python -m venv myenv
-source myenv/bin/activate      # macOS/Linux
-myenv\Scripts\activate         # Windows
-
+    ```bash
+    python -m venv myenv
+    source myenv/bin/activate      # macOS/Linux
+    myenv\Scripts\activate         # Windows
+    ```
 3. Install dependencies
-pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 4. Create an .env file
-GOOGLE_API_KEY=your_google_api_key
-GEMINI_MODEL_NAME= the model you want to use
+    ```bash
+    GOOGLE_API_KEY=your_google_api_key
+    GEMINI_MODEL_NAME= the model you want to use
+    ```
 
 
 5. Run the app
