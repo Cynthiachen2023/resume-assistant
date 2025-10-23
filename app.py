@@ -138,6 +138,13 @@ system_prompt = """
 
 user_input = st.chat_input("Ask your career or resume question here...")
 
+if st.session_state.history:
+    for user_msg, bot_msg in st.session_state.history:
+        with st.chat_message("user"):
+            st.markdown(user_msg)
+        with st.chat_message("assistant"):
+            st.markdown(bot_msg)
+            
 if user_input:
     if not st.session_state.index:
         st.warning("Please upload your files and create the vector index first!")
